@@ -1,0 +1,88 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+style.
+  body {
+  font-family: Arial, sans-serif;
+  align-items: center;
+  }
+  .content {
+  margin-left: 240px;
+  padding: 80px 20px 20px;
+  background-color: #f4f4f4;
+  }
+  h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  }
+  form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  }
+  .form-group {
+  margin-bottom: 15px;
+  }
+  .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  }
+  .form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  }
+  button[type="submit"] {
+  padding: 10px 15px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s
+  }
+main.content
+  section.record-entry
+    h1 Record Produce Entry
+    form#produce-entry-form  
+      .form-group
+        label(for='produce-name') Produce Name:
+        input#produce-name(type='text' name='produce-name' required='')
+      .form-group
+        label(for='produce-type') Type of Produce:
+        input#produce-type(type='text' name='produce-type' required='')
+      .form-group
+        label(for='entry-date') Date:
+        input#entry-date(type='date' name='entry-date' required='')
+      .form-group
+        label(for='entry-time') Time:
+        input#entry-time(type='time' name='entry-time' required='')
+      .form-group
+        label(for='tonnage') Tonnage (kg):
+        input#tonnage(type='number' name='tonnage' required='')
+      .form-group
+        label(for='cost') Cost (Ugx):
+        input#cost(type='number' name='cost' required='')
+      .form-group
+        label(for='dealer-name') Dealer Name:
+        input#dealer-name(type='text' name='dealer-name' required='')
+      .form-group
+        label(for='branch-name') Branch Name:
+        select#branch-name(name='branch-name' required='')
+          option(value='Maganjo') Maganjo
+          option(value='Matugga') Matugga
+      .form-group
+        label(for='contact') Contact:
+        input#contact(type='tel' name='contact' required='')
+      .form-group
+        label(for='selling-price') Selling Price (Ugx):
+        input#selling-price(type='number' name='selling-price' required='')
+      button(type='submit') submit

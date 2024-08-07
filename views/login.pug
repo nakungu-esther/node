@@ -1,0 +1,13 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Login Page
+  link(rel='stylesheet' href='/css/files.css')
+.login-container
+  h2 Login
+  form(action='/login' method='POST')
+    input(type='text' name='username' placeholder='Username' required='')
+    input(type='password' name='password' placeholder='Password' required='')
+    input(type='submit' value='Login')
+  a.signup-link(href='signup.html') Don&apos;t have an account? Sign up

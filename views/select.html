@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+.content {
+    margin-left: 240px;
+    padding: 80px 20px 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s
+}
+</style>
+<body>
+    <main class="content">
+        <section class="record-entry">
+            <h1>Record Produce Entry</h1>
+            <form id="produce-entry-form">
+                <div class="form-group">
+                    <label for="produce-name">Produce Name:</label>
+                    <input type="text" id="produce-name" name="produce-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="produce-type">Type of Produce:</label>
+                    <input type="text" id="produce-type" name="produce-type" required>
+                </div>
+                <div class="form-group">
+                    <label for="entry-date">Date:</label>
+                    <input type="date" id="entry-date" name="entry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="entry-time">Time:</label>
+                    <input type="time" id="entry-time" name="entry-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="tonnage">Tonnage (kg):</label>
+                    <input type="number" id="tonnage" name="tonnage" required>
+                </div>
+                <div class="form-group">
+                    <label for="cost">Cost (Ugx):</label>
+                    <input type="number" id="cost" name="cost" required>
+                </div>
+                <div class="form-group">
+                    <label for="dealer-name">Dealer Name:</label>
+                    <input type="text" id="dealer-name" name="dealer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="branch-name">Branch Name:</label>
+                    <select id="branch-name" name="branch-name" required>
+                        <option value="Maganjo">Maganjo</option>
+                        <option value="Matugga">Matugga</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact:</label>
+                    <input type="tel" id="contact" name="contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="selling-price">Selling Price (Ugx):</label>
+                    <input type="number" id="selling-price" name="selling-price" required>
+                </div>
+                <button type="submit">Record Entry</button>
+            </form>
+        </section>
+</body>
+</html>
