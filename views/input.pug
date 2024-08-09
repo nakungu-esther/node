@@ -55,16 +55,16 @@ main.content
     form#produce-entry-form  
       .form-group
         label(for='produce-name') Produce Name:
-        input#produce-name(type='text' name='produce-name' required='')
+        input#produce-name(type='text' name='producename' required='')
       .form-group
         label(for='produce-type') Type of Produce:
-        input#produce-type(type='text' name='produce-type' required='')
+        input#produce-type(type='text' name='producetype' required='')
       .form-group
         label(for='entry-date') Date:
-        input#entry-date(type='date' name='entry-date' required='')
+        input#entry-date(type='date' name='entrydate' required='')
       .form-group
         label(for='entry-time') Time:
-        input#entry-time(type='time' name='entry-time' required='')
+        input#entry-time(type='time' name='entrytime' required='')
       .form-group
         label(for='tonnage') Tonnage (kg):
         input#tonnage(type='number' name='tonnage' required='')
@@ -73,10 +73,10 @@ main.content
         input#cost(type='number' name='cost' required='')
       .form-group
         label(for='dealer-name') Dealer Name:
-        input#dealer-name(type='text' name='dealer-name' required='')
+        input#dealer-name(type='text' name='dealername' required='')
       .form-group
         label(for='branch-name') Branch Name:
-        select#branch-name(name='branch-name' required='')
+        select#branch-name(name='branchname' required='')
           option(value='Maganjo') Maganjo
           option(value='Matugga') Matugga
       .form-group
@@ -84,5 +84,5 @@ main.content
         input#contact(type='tel' name='contact' required='')
       .form-group
         label(for='selling-price') Selling Price (Ugx):
-        input#selling-price(type='number' name='selling-price' required='')
+        input#selling-price(type='number' name='sellingprice' required='')
       button(type='submit') submit

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    border-radius: 20px;               
+}
+.navbar {
+    background-color: #4CAF50;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #45a049;
+}
+.container {
+    padding: 10px;
+    background-image: url('/img/ORANGE.webp')center/cover no-repeat fixed;
+}
+h2 {
+    color: #101c11;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-group input[type="submit"] {
+    background-color: #3d423d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}

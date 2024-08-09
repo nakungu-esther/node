@@ -5,10 +5,13 @@ router.get("/login", (req, res) => {
     res.render("login");
 });
 
-router.post('/login',(req, res)=>{
-    res.json(req.body)
-});
 
+router.post('/Input',(req, res)=>{
+    const newCrop = new Crop(req.body)
+    newCrop.save()
+    res.redirect('/sign')
+    });
+ 
 
 module.exports = router;
 

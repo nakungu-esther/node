@@ -1,0 +1,16 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Signup Page
+  Link(rel="stylesheet" href="/css/files.css")
+.signup-container
+  h2 Sign Up
+  form(action='/signup' method='POST')
+    input(type='text' name='firstname' placeholder='firstname' required='')
+     input(type='text' name='secondname' placeholder='secondname' required='')
+    input(type='email' name='email' placeholder='Email' required='')
+    input(type='password' name='password' placeholder='Password' required='')
+    input(type='confirmpassword' name='confirmpassword' placeholder='confirmPassword' required='')
+    input(type='submit' value='Sign Up')
+  a.login-link(href='/login')  login

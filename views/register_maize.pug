@@ -1,0 +1,26 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Register Maize
+  link(rel='stylesheet' href='/css/register.css')
+.navbar
+  a(href='/login') Home
+  a(href='/register') Register crop
+  a(href='/sign') signup
+  a(href='#sales') Sales
+  a(href='#contact') Contact
+.container
+  h2 Register Maize
+  form(action='/register' method='post')
+    .form-group
+      label(for='maize-type') crop Type:
+      input#maize-type(type='text' name='maizetype' required='')
+    .form-group
+      label(for='quantity') Quantity (in kilograms):
+      input#quantity(type='number' name='quantity' required='')
+    .form-group
+      label(for='price') Price per Kilogram:
+      input#price(type='number' name='price' step='0.01' required='')
+    .form-group
+      input(type='submit' value='Register Maize')
