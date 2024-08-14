@@ -1,0 +1,19 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title User Profile
+  link(rel='stylesheet' href='/css/profile.css')
+h1 User Profile
+form#profile-form
+  label(for='name') Name:
+  input#name(type='text' name='name' readonly='')
+  br
+  br
+  label(for='email') Email:
+  input#email(type='email' name='email' readonly='')
+  br
+  br
+  label(for='age') Age:
+  input#age(type='number' name='age' readonly='')
+script(src='js/profile.js')

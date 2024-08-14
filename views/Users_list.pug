@@ -1,0 +1,19 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title User List Form
+  link(rel="stylesheet" hrel="/css/User.css")
+h1 User Management System
+form
+  label(for='username') Username:
+  br
+  input#username(type='text' name='username' style='width: 300px; height: 30px;')
+  br
+  br
+  label(for='userList') List of Users:
+  br
+  textarea#userList(name='userList' rows='10' cols='50' style='width: 100%;')
+  br
+  br
+  button(type='submit') Submit

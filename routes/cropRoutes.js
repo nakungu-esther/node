@@ -1,19 +1,26 @@
-const express = require('express')
+
+const express = require('express');
 const router = express.Router();
 
-//import models
-const Crop = require('../models/crop')
+// Import models
+const Register = require('../models/signup'); // Adjust the path and model name as needed
 
+// GET request handler for registration page
 router.get("/register", (req, res) => {
-    res.render("register_maize");
+    res.render("register_maize"); // Ensure this view exists
 });
 
-router.post('/register',(req, res)=>{
-const newCrop = new Crop(req.body)
-newCrop.save()
-res.redirect('/Input')
+// POST request handler for registration
+router.post('/register', async (req, res) => {
+    try {
+        const newUser = new Register(req.body);
+        console.log('This is the data being sent to the DB:', newUser);
+        await newUser.save();
+        res.redirect('/');
+    } catch (error) {
+        console.error('Error registering the crop:', error);
+        res.status(400).render('register_maize', { error: 'An error occurred while registering the crop.' });
+    }
 });
-
 
 module.exports = router;
-
